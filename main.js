@@ -73,20 +73,20 @@ function SendEmail(){
   let address=document.getElementById("address").value;
   
   let body= "Name:"+ name +"<br/>Email:" + email + "<br/> Order:" + order +"<br/> Contact Number:" + contact + "<br/>Address:" + address;
-  console.log(body);
   
-  //  Email.send({
-    //SecureToken :"3cc0cf33-f177-4798-984d-e86882a76d1a", 
+  
+    Email.send({
+    SecureToken :"3cc0cf33-f177-4798-984d-e86882a76d1a", 
     //Host : "smtp.elasticemail.com",
     //Username : "yadlucky770@gmail.com",
     //Password : "96586D0B2E07F9F665300EE51E29CB2BA326",
-    //To : 'yadlucky770@gmail.com',
-    //From : "yadlucky770@gmail.com",
-    //Subject : "This is the subject",
-    //Body : "And this is the body"
-//}).then(
-  //message => alert(message)
-//);
+    To : 'yadlucky770@gmail.com',
+    From : "yadlucky770@gmail.com",
+    Subject : "Request for Order",
+    Body :body
+}).then(
+  message => alert(message)
+);
 
 }
 
