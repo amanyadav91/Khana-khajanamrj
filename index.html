@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>food-website</title>
+    <title>Khana Kahajana</title>
     <link
       rel="shortcut icon"
       href="./images/title-logo.png"
@@ -271,17 +271,17 @@
 
       <!-- ====markup gallery section==== -->
       <section id="order" class="order">
-        <h2>make an <span>order</span></h2>
+        <h2>Make an <span>order</span></h2>
 
         <div class="order-content">
           <form action="#" class="order-form" autocomplete="off">
-            <input type="text" placeholder="name" required />
-            <input type="email" placeholder="email" required />
-            <input type="password" placeholder="password" required />
-            <input type="number" placeholder="phone Number" required />
-            <textarea cols="30" rows="8" placeholder="address"></textarea>
+            <input type="text" placeholder="name" required  id="name"/>
+            <input type="email" placeholder="email" required id="email" />
+            <input type="password" placeholder="password" required id="password"/>
+            <input type="number" placeholder="phone Number" required id="contact" />
+            <textarea cols="30" rows="8" placeholder="address" id="address"></textarea>
 
-            <button type="submit">Order now</button>
+            <button type="submit" onclick="SendEmail()">Order now</button>
           </form>
           <img src="form-img.jpg" alt="Net Error" />
         </div>
@@ -345,9 +345,10 @@
     </footer>
 
     <!-- ----linked main.js file---- -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="main.js"></script>
   </body>
 </html>
 
 <!-- happy coding!!!! -->
-<!-- this project made by Aman  2022. -->
+<!-- this project made by Aman 2022. -->
