@@ -237,6 +237,7 @@
     grid-column: 1 / -1;
   }
 }
+ 
 
 @media screen and (max-width: 450px) {
   html {
@@ -248,4 +249,5 @@
   .header .navbar {
     width: 70%;
   }
+  
 }
